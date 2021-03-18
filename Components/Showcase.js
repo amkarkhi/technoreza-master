@@ -19,7 +19,7 @@ const Showcase = (texts) => {
           </div>
           <div>
             <img src="" alt=""/>
-            <p>{textHome.showPic3}</p>
+            <p>{textHome.showPic2}</p>
           </div>
         </div>
       </div>
