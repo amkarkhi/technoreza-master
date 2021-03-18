@@ -16,6 +16,7 @@ export default function Home() {
         <section>
           <Resume />
           <Showcase />
+          <Showcase />
         </section>
       </main>
     </div>
