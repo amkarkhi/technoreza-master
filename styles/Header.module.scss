@@ -1,0 +1,83 @@
+#navbar {
+  background: url("../public/res/assets/headerBKG@2x.png") no-repeat top left/cover;
+  color: white;
+}
+
+.navFlex {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navUp {
+  border: 1px solid gray;
+  padding: 0 3rem;
+}
+
+#navUp div{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.navSeg {
+  padding: 0 2.5rem;
+  position: relative;
+}
+
+.navSeg::before {
+  content:'';
+  position: absolute;
+  width: .12rem;
+  height: 1.5rem;
+  left: 0;
+  z-index: 1;
+  background: gray;
+  border-radius: .5rem;
+}
+
+.navSeg:first-child::before {
+  display: none;
+}
+
+.navSeg ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navSeg p {
+  margin-left: .7rem;
+}
+
+.social {
+  margin: .7rem;
+}
+
+#navDown {
+  padding: 1.5rem 1.5rem 1.5rem 6rem;
+}
+
+#navDown ul li a {
+  padding: 1rem;
+}
+
+#navDown ul li a:hover {
+  opacity: .5;
+}
+
+#navDown form input {
+  padding: .4rem 2rem;
+  border-radius: .4rem;
+  font-size: .9rem;
+  line-height: 1.2rem;
+  position: relative;
+  outline: none;
+}
+
+#navDown form button {
+  position: absolute;
+  left: 0;
+  height: 2rem;
+  width: 2rem;
+}
