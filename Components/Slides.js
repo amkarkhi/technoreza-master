@@ -1,9 +1,10 @@
 import React from 'react'
+import Carousel from 'react-bootstrap/Carousel'
 
 const Slides = () => {
   return (
-    <section>
-      <h3>Slides</h3>
+    <section style={{height: "400px"}}>
+    
     </section>
   )
 }

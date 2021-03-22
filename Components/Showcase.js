@@ -1,28 +1,27 @@
 import React from 'react'
-import {textHome} from "../data/TextData"
+import {showV} from "../data/TextData"
+import styles from '../styles/Home.module.scss'
 
 
 const Showcase = (texts) => {
   return (
-    <article>
-      <div>
-        <h2>{textHome.showHead}</h2>
-        <p>{textHome.showPar}</p>
-        <div>
-          <div>
-            <img src="" alt=""/>
-            <p>{textHome.showPic1}</p>
-          </div>
-          <div>
-            <img src="" alt=""/>
-            <p>{textHome.showPic2}</p>
-          </div>
-          <div>
-            <img src="" alt=""/>
-            <p>{textHome.showPic2}</p>
-          </div>
+    <article id={styles.showcase}>
+        <div id={styles.title}>
+          <i>?</i>
+          <h2>{showV.mHr}</h2>
+          <p>{showV.par}</p>
         </div>
-      </div>
+        <div className={styles.pics}>
+          {showV.images.map(image => (
+            <div key={image.id}>
+              <div className={styles.info}>
+                <img src={image.src} alt={image.alt}/>
+                <p>{image.desc}</p>
+              </div>
+              <div className={styles.background}></div>
+            </div>
+          ))}
+        </div>
     </article>
   )
 }

@@ -2,7 +2,7 @@ import Head from "next/head";
 import Slides from "../Components/Slides"
 import Resume from "../Components/Resume"
 import Showcase from "../Components/Showcase"
-import homeStyles from '../styles/Home.module.scss'
+import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
@@ -11,11 +11,9 @@ export default function Home() {
         <title>technoreza</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={homeStyles.container}>
-        <Slides />
+      <main className={styles.container}>
         <section>
           <Resume />
-          <Showcase />
           <Showcase />
         </section>
       </main>

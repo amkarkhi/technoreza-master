@@ -1,25 +1,29 @@
 import React from 'react'
 import Link from 'next/link'
+import {resumeV} from '../data/TextData'
+import styles from '../styles/Home.module.scss'
 
 const Resume = () => {
   return (
-    <article>
+    <article id={styles.resume}>
       <div>
-        <h2>لورم ایپسوم متن ساختگی</h2>
-        <h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h3>
-        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت</p>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
+        <h2>{resumeV.mHr}</h2>
+        <h3>{resumeV.sHr}</h3>
+        <p>{resumeV.par}</p>
+        <ul id={styles.attributes}>
+          {resumeV.attributes.map(attribute => (
+            <li key={attribute.id}>
+              <i>{attribute.src}</i>
+              <p>{attribute.title}</p>
+            </li>
+          ))}
         </ul>
-        <ul>
-          <li>
-            <Link href="/aboutUs">اطلاعات بیشتر</Link>
-          </li>
-          <li>
-            <Link href="/products">مشاهده محصولات</Link>
-          </li>
+        <ul id={styles.btns}>
+          {resumeV.btns.map(btn => (
+            <li key={btn.id}>
+              <Link href={btn.src}>{btn.title}</Link>
+            </li>
+          ))}
         </ul>
       </div>
       <div>

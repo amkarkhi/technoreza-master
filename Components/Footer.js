@@ -1,40 +1,41 @@
 import React from "react";
 import Link from 'next/link'
-import footerStyoles from '../styles/Footer.module.scss'
+import {footerV} from '../data/TextData'
+import style from '../styles/Footer.module.scss'
 const Footer = () => (
-  <footer id={footerStyoles.mainFooter}>
-    <div className={footerStyoles.container}>
+  <footer id={style.mainFooter}>
+    <div className={style.container}>
       <div>
-        <h3>درباره ما</h3>
-        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع </p>
-        <p>شرکت ما را در شبکه های اجتماعی دنبال کنید:</p>
-        <ul className={footerStyoles.hozlist}>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
+        <h3>{footerV.hd1}</h3>
+        <p>{footerV.p11}</p>
+        <p>{footerV.p12}</p>
+        <ul className={style.hozlist}>
+          {footerV.socials.map( social => (
+            <li key={social.id}>
+              <i>{social.src}</i>
+            </li>
+          ))}
         </ul>
       </div>
       <div>
-        <h3>لینک ها</h3>
-        <ul className={footerStyoles.verlist}>
-          <li>
-            <Link href="/products">محصولات</Link>
-          </li>
-          <li>
-            <Link href="/aboutUs">درباره ما</Link>
-          </li>
-          <li>
-            <Link href="/contactUs">ارتباط با ما</Link>
-          </li>
+        <h3>{footerV.hd2}</h3>
+        <ul className={style.verlist}>
+          {footerV.links.map( social =>(
+            <li key={social.id}>
+              <Link href={social.src}>{social.title}</Link>
+            </li>
+          ))}
         </ul>
       </div>
       <div>
-        <h3>ارتباط با ما</h3>
-        <ul className={footerStyoles.verlist}>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
+        <h3>{footerV.hd3}</h3>
+        <ul className={style.verlist}>
+          {footerV.contacts.map( contact => (
+            <li key={contact.id}>
+              <img src={contact.src} alt=""/>
+              <p>{contact.text}</p>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
