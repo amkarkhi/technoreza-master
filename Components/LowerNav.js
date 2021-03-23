@@ -16,11 +16,7 @@ const LowerNav = () => {
         </ul>
         <form action="">
           <input type="text" placeholder="جستجو"/>
-<<<<<<< HEAD
-          <button>?</button>
-=======
           <button><img src={headerV.pic} alt=""/></button>
->>>>>>> c92459ed04b0f581d90fdecbaff7285fd17a3430
         </form>
       </div>
     </nav>

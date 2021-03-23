@@ -7,12 +7,9 @@ const Showcase = (texts) => {
   return (
     <article id={styles.showcase}>
         <div id={styles.title}>
-<<<<<<< HEAD
-          <i>?</i>
-=======
           <img src={showV.logo} alt=""/>
->>>>>>> c92459ed04b0f581d90fdecbaff7285fd17a3430
           <h2>{showV.mHr}</h2>
+          
           <p>{showV.par}</p>
         </div>
         <div className={styles.pics}>

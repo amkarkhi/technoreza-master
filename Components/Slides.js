@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-import Carousel from 'react-bootstrap/Carousel'
-
-const Slides = () => {
-  return (
-    <section style={{height: "400px"}}>
-    
-    </section>
-  )
-}
-
-export default Slides
-=======
 import React, {Component} from 'react'
 import  Link  from 'next/link'
 import Slider from "react-slick"
@@ -30,6 +16,7 @@ export default class Slides extends Component {
     return (
       <section>
         <div className={styles.slideshowContainer}>
+     
           <Slider {...settings}>
             <div className={styles.slides}>
               <div className={styles.grid}>
@@ -59,4 +46,3 @@ export default class Slides extends Component {
     );
   }
 }
->>>>>>> c92459ed04b0f581d90fdecbaff7285fd17a3430

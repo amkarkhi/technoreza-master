@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-import Layout from '../Components/Layout'
-import Header from '../Components/Header'
-import Footer from '../Components/Footer'
-import "../styles/globals.scss";
-
-function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <Header />
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-      <Footer />
-    </>
-  )
-=======
 import Head from "next/head";
 import { useRouter } from 'next/router'
 import Layout from '../Components/Layout'
@@ -23,7 +6,8 @@ import HomeHeader from '../Components/HomeHeader'
 import SimpleHeader from '../Components/SimpleHeader'
 import Footer from '../Components/Footer'
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import
+ "slick-carousel/slick/slick-theme.css";
 import "../styles/globals.scss";
 
 
@@ -60,7 +44,6 @@ function MyApp({ Component, pageProps }) {
       </>
     )
   }
->>>>>>> c92459ed04b0f581d90fdecbaff7285fd17a3430
 }
 
 export default MyApp;
