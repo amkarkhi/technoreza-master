@@ -1,0 +1,85 @@
+#mainFooter {
+  background: url('../public/res/assets/headerBKG@2x.png') no-repeat bottom left/ cover;
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 1rem;
+
+  div:first-child {
+    grid-column: 1 / span 3;
+  }
+
+  div:last-child {
+    grid-column: 7 / span 2 ;
+  }
+
+  div:nth-child(2) {
+    grid-column: 5 / span 1;
+  }
+
+  div {
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      a {
+        font-size: 1rem;
+      }
+
+      h4 {
+        font-weight: normal;
+      }
+    }
+  }
+
+  div:last-child {
+    ul {
+      li {
+        display: grid;
+        grid-gap: .5rem;
+        grid-template-columns: 1fr 10fr;
+        justify-content: center;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+
+.hozlist {
+  display: flex;
+  align-items: center;
+  ul {
+    li {
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.hozlist li {
+  padding: 1rem;
+}
+
+.verlist {
+  display: flex;
+  flex-direction: column;
+  
+  li {
+    margin-bottom: 1.2rem;
+  }
+}
