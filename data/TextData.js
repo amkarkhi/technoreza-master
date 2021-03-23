@@ -1,7 +1,7 @@
 const headerV = {
   followUs: "مارا دنبال کنید",
-  phone: "44018936 - 09124786958",
-  location: "سعادت آباد، بلوار دریا، پلاک 49، واحد 4",
+  phone: "4444444 - 09112312356",
+  location: " محل کار خود داشته باشیم",
 
   tabs: [
     {id: 1, src:"/", text:"خانه"},
@@ -68,8 +68,8 @@ const footerV = {
 
   hd3: "ارتباط با ما",
   contacts: [
-    {id: 1, src: "/res/Icons/phone2.svg", text: "021-22399433"},
-    {id: 2, src: "/res/Icons/fax.svg", text: "021-22394885"},
+    {id: 1, src: "/res/Icons/phone2.svg", text: "021-12356879"},
+    {id: 2, src: "/res/Icons/fax.svg", text: "021-22356478"},
     {id: 3, src: "/res/Icons/letter.svg", text: "lorem@ipsum.com"},
     {id: 4, src: "/res/Icons/location2.svg", text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است"},
   ]
