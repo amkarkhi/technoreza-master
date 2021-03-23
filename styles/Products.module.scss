@@ -1,0 +1,85 @@
+#header {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px grey solid;
+  border-top: none;
+
+  div {
+    background: rgba($color: #000000, $alpha: 0.7);
+    padding: 2rem 15rem;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+      color: red;
+    }
+  }
+}
+
+#products {
+  padding: 5rem 0rem;
+
+  div {
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6rem;
+      text-align: justify;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .pics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5vw;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+
+    div {
+      position: relative;
+      padding: 1rem;
+      width: 100%;
+
+      .info {
+        img {
+          align-self: center;
+          -webkit-filter: drop-shadow(.2rem .2rem .5rem #000 );
+          filter: drop-shadow(.2rem .2rem .5rem #000);
+        }
+
+        p {
+          color: white;
+          text-align: center;
+        }
+      }
+
+      .background {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background: url('../public/res/assets/headerBKG.png');
+        z-index: -1;
+        border-radius: 1rem;
+      }
+      
+    }
+  }
+}

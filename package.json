@@ -14,9 +14,19 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
+<<<<<<< HEAD
     "sass": "^1.32.8"
   },
   "devDependencies": {
     "file-loader": "^6.2.0"
+=======
+    "react-slick": "^0.28.1",
+    "sass": "^1.32.8",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "webpack": "^5.27.2"
+>>>>>>> c92459ed04b0f581d90fdecbaff7285fd17a3430
   }
 }

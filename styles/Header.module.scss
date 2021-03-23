@@ -1,5 +1,17 @@
+<<<<<<< HEAD
 .navbar {
   background: url("../public/res/assets/headerBKG@2x.png") no-repeat top left/cover;
+=======
+.homeHeader {
+  background: url("../public/res/assets/headerBKG@2x.png") no-repeat top left/cover;
+}
+
+.productsHeader {
+  background: url("../public/res/assets/factory.jpg") no-repeat top left/cover;
+}
+
+.navbar {
+>>>>>>> c92459ed04b0f581d90fdecbaff7285fd17a3430
   color: white;
 
   #navUp {
@@ -67,6 +79,13 @@
         border: none;
         border-radius: .4rem 0 0 .4rem;
         cursor: pointer;
+<<<<<<< HEAD
+=======
+
+        img {
+          padding: .3rem;
+        }
+>>>>>>> c92459ed04b0f581d90fdecbaff7285fd17a3430
       }
     }
   }

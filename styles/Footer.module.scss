@@ -22,10 +22,59 @@
   div:nth-child(2) {
     grid-column: 5 / span 1;
   }
+<<<<<<< HEAD
+=======
+
+  div {
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      a {
+        font-size: 1rem;
+      }
+
+      h4 {
+        font-weight: normal;
+      }
+    }
+  }
+
+  div:last-child {
+    ul {
+      li {
+        display: grid;
+        grid-gap: .5rem;
+        grid-template-columns: 1fr 10fr;
+        justify-content: center;
+        align-items: flex-start;
+      }
+    }
+  }
+>>>>>>> c92459ed04b0f581d90fdecbaff7285fd17a3430
 }
 
 .hozlist {
   display: flex;
+<<<<<<< HEAD
+=======
+  align-items: center;
+  ul {
+    li {
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+>>>>>>> c92459ed04b0f581d90fdecbaff7285fd17a3430
 }
 
 .hozlist li {
@@ -37,6 +86,10 @@
   flex-direction: column;
   
   li {
+<<<<<<< HEAD
     padding: .5rem 0;
+=======
+    margin-bottom: 1.2rem;
+>>>>>>> c92459ed04b0f581d90fdecbaff7285fd17a3430
   }
 }

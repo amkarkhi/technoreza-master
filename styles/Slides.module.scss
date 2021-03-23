@@ -1,0 +1,52 @@
+.slideshowContainer {
+  max-width: var(--max-width);
+  position: relative;
+  margin: 0 auto;
+
+  .slides {
+    display: none;
+    color: white;
+    width: inherit;
+    direction: rtl;
+    padding: 0 2rem;
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      align-items: center;
+
+      div:last-child {
+        padding: 8rem;
+      }
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2.2rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1.6rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      margin-bottom: 4rem;
+      color: white;
+      background: grey;
+      border: none;
+      outline: none;
+      border-radius: 1rem;
+      padding: .3rem 1rem;
+      cursor: pointer;  
+    }
+  }
+}

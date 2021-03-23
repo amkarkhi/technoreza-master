@@ -13,7 +13,11 @@ const Resume = () => {
         <ul id={styles.attributes}>
           {resumeV.attributes.map(attribute => (
             <li key={attribute.id}>
+<<<<<<< HEAD
               <i>{attribute.src}</i>
+=======
+              <img src={attribute.src} alt=""/>
+>>>>>>> c92459ed04b0f581d90fdecbaff7285fd17a3430
               <p>{attribute.title}</p>
             </li>
           ))}
@@ -27,8 +31,16 @@ const Resume = () => {
         </ul>
       </div>
       <div>
+<<<<<<< HEAD
         <div></div>
         <h2></h2>
+=======
+        <img src={resumeV.pic} alt=""/>
+        <div>
+          <h2>{resumeV.cap.num}</h2>
+          <h2>{resumeV.cap.text}</h2>
+        </div>
+>>>>>>> c92459ed04b0f581d90fdecbaff7285fd17a3430
       </div>
     </article>
   )
